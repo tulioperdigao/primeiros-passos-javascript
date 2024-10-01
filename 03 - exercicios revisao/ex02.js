@@ -1,7 +1,8 @@
 const peso = 110;
 const altura = 1.65;
 
-let imc = peso / (altura * altura);
+let imc = peso / Math.pow(altura, 2);
+
 console.log(imc.toFixed(1));
 
 if (imc < 18.5) {
