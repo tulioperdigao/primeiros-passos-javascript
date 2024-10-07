@@ -5,6 +5,8 @@ const tulio = {
     idade: 20
 };
 
-console.log(tulio.nome);
-console.log(tulio.idade);
+tulio.altura = 1.65;
+
+delete tulio.nome;
+
 console.log(tulio);
