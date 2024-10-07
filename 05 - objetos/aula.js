@@ -14,9 +14,17 @@ class pessoa {
     }
 }
 
-const tulio = new pessoa('Tulio', 20);
+function compararPessoas(p1, p2) {
+    if (p1.idade > p2.idade) {
+        console.log(`${p1.nome} é mais velha(o) que ${p2.nome}.`);
+    } else if (p2.idade > p1.idade) {
+        console.log(`${p2.nome} é mais velha(o) que ${p1.nome}.`);
+    } else {
+        console.log(`${p1.nome} e ${p2.nome} tem a mesma idade.`)
+    }
+}
 
+const tulio = new pessoa('Tulio', 20);
 const bruna = new pessoa('Bruna', 27);
 
-console.log(tulio);
-console.log(bruna);
+compararPessoas(tulio, bruna);
