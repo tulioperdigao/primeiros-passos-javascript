@@ -1,13 +1,19 @@
+class pessoa {
+    nome;
+    idade;
 
-
-const pessoa = {
-    nome: 'Tulio P Castro',
-    idade: 20,
-
-    descrever: function () {
-        console.log(`Meu nome é ${this.nome} e minha idade é ${this.idade}.`);
+    descrever() {
+        console.log(`Meu nome é ${this.nome} e minha idade é ${this.idade}.`);   
     }
-};
+}
 
-pessoa['nome'] = 'teste';
-pessoa.nome = 'teste';
+const tulio = new pessoa();
+tulio.nome = 'Tulio P Castro';
+tulio.idade = 20;
+
+const bruna = new pessoa();
+bruna.nome = 'Bruna Eduarda';
+bruna.idade = 27;
+
+tulio.descrever();
+bruna.descrever();
