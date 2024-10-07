@@ -1,12 +1,16 @@
 
 
-const tulio = {
+const pessoa = {
     nome: 'Tulio P Castro',
-    idade: 20
+    idade: 20,
+
+    descrever: function () {
+        console.log(`Meu nome é ${this.nome} e minha idade é ${this.idade}.`);
+    }
 };
 
-tulio.altura = 1.65;
+pessoa.descrever = function() {
+    console.log(`Meu nome é ${this.nome}.`);
+};
 
-delete tulio.nome;
-
-console.log(tulio);
+pessoa.descrever();
