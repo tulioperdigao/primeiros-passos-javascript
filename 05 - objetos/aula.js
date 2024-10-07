@@ -9,8 +9,5 @@ const pessoa = {
     }
 };
 
-pessoa.descrever = function() {
-    console.log(`Meu nome é ${this.nome}.`);
-};
-
-pessoa.descrever();
+pessoa['nome'] = 'teste';
+pessoa.nome = 'teste';
