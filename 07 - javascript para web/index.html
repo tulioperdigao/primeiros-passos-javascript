@@ -40,13 +40,16 @@
     <h1>Testando JavaScript Web</h1>
     <p>Esse site está sendo feito para fins acadêmicos, baseado nas video-aulas do bootcamp Ri-Happy fornecido pela DIO.</p>
 
-    <button type="button">
+    <button id="btn-teste" type="button">
         Teste
     </button>
 
     <script>
 
-        
+        const btnTeste = document.getElementById("btn-teste")
+        btnTeste.addEventListener("click", function() {
+            console.log('Clicou no botão!')
+        })
 
     </script>
 </body>
