@@ -21,7 +21,7 @@
 .water {
     background-color: #678fee;
 }
-.eletric {
+.electric {
     background-color: #f7cf2e;
 }
 .ice {
@@ -136,6 +136,7 @@
     padding: 0.5rem 1rem;
     font-size: 0.8rem;
     font-weight: bold;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 992px) {
