@@ -1,19 +1,14 @@
 
 const {gets, print} = require('./funcoes-auxiliares');
-const numerosSorteados = []
 let maior = 0
+const quantidadeDeAlunos = gets()
 
-for (let i = 0; i < 5; i++) {
+
+for (let i = 0; i < quantidadeDeAlunos; i++) {
     const numero = gets();
-    numerosSorteados.push(numero)
-    
-}
-
-for (let i = 0; i < numerosSorteados.length; i++) {
-    if (numerosSorteados[i] > maior) {
-        maior = numerosSorteados[i]
+    if (numero > maior) {
+        maior = numero
     }
-    
 }
 
 print(maior)
